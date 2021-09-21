@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+   <nav class="navbar navbar-light sticky-top   bg-primary">
+  <div class="container-fluid">
+
+  
+  <span class="navbar-brand mb-1 h1 navbar-text "  >Assignment submission</span>
+  </div>
+</nav>
+<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">Assingment </h2>
+                <p class="font-weight-bold text-white  p-2">Note: You can't use same phone number or email to submit another assignment</p>
+                </div>
+
+<div class="container p-5 ">
+  <form action="/submit" method="POST">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" class="text" name="email" placeholder="Your email.." required>
+
+    <label for="course">Course</label>
+    <select id="course" name="course" required="required">
+      <option  disabled selected value="">Select course</option>
+      <option value="one" >Course One</option>
+      <option value="two" >Course Two</option>
+      <option value="three" >Course Three</option>
+    </select>
+
+
+    <label for="no" class="pt-3">Mobile number</label>
+    <input type="tel" id="phone" class="text" name="no"
+        placeholder="Your mobile number" pattern="[0-9]{10}"
+       required>
+ 
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender" required>
+      <option  disabled selected value="">Select gender</option>
+      <option value="m"  >Male</option>
+      <option value="f" >Female</option>
+      <option value="o" >Others</option>
+    </select>
+
+    <label for="link"  class="pt-3">Submission Link</label>
+    <input type="text" id="link" name="link" placeholder="Submission link here" class="" required>
+
+    <input type="submit" class="align-center " value="Submit" >
+
+  </form>
+</div>
+
+</body>
+</html>
